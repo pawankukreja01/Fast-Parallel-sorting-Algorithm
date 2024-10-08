@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .bars_container {
+      /* Add styles for bars_container if needed */
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #000; /* Assuming you want a border below the header */
+      margin-bottom: 20px;
+    }
+
+    .buttons_container {
+      text-align: center;
+    }
+
+    /* Add more styling for buttons and other elements as needed */
+
+    #ans {
+      /* Add styles for ans if needed */
+    }
+  </style>
+  <title>Visualizing Sorting Algorithms</title>
+</head>
+<body>
+  <div class="container">
+    <div class="bars_container" id="bars_container"></div>
+    <h1 class="header">Visualizing Sorting Algorithms Kiran Dembra(K191487), Pawan Kukreja(K190250), Irtisam Qureshi(K191488)</h1>
+    <div class="buttons_container">
+      <input type="file" id="upload" />
+      <select name="" id="speed">
+        <option value="200">Slow</option>
+        <option value="30">Fast</option>
+      </select>
+      <select name="" id="algo">
+        <option value="insertion">Insertion Sort</option>
+        <option value="count">Count Sort</option>
+        <option value="heap">Heap Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+        <option value="bubble">Bubble Sort</option>
+        <option value="radix">Radix Sort</option>
+        <option value="bucket">Bucket Sort</option>
+        <option value="new1">7.4.5</option>
+        <option value="new2">8.4.2</option>
+      </select>
+      <button class="btns" id="generate_array_btn">Generate Array</button>
+      <button class="btns" id="shuffle_array_btn">Randomize array</button>
+      <button class="btns" id="sort_btn">Sort</button>
+    </div>
+    <div id="ans"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
